@@ -1,0 +1,42 @@
+window {
+    background: #000000;
+    background-image: none;
+    border-radius: 0px;
+    border: none;
+}
+
+#box {
+    padding: 8px;
+}
+
+#active {
+    border-bottom: solid 1px;
+    border-color: transparent;
+}
+
+button, image {
+    background: none;
+    background-image: none;
+    border-style: none;
+    box-shadow: none;
+    color: #c4746e;
+}
+
+button {
+    padding: 4px;
+    margin-left: 4px;
+    margin-right: 4px;
+    border-radius: 0px;
+    color: #c4746e;
+    font-family: "AnonymicePro Nerd Font";
+    font-size: 12px;
+}
+
+button:hover {
+    background-color: rgba(196, 116, 110, 0.15);
+    border-radius: 0px;
+}
+
+button:focus {
+    box-shadow: none;
+}

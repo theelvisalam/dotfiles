@@ -1,0 +1,77 @@
+configuration {
+    font: "AnonymicePro Nerd Font 11";
+    show-icons: false;
+}
+
+* {
+    kd-bg:      #000000;
+    kd-primary: #c4746e;
+    kd-dim:     #a6a69c;
+    kd-outline: #393836;
+
+    background-color: transparent;
+    text-color:       @kd-primary;
+    border-color:     @kd-primary;
+}
+
+window {
+    width:            560px;
+    background-color: @kd-bg;
+    border:           0px;
+    border-radius:    0px;
+    padding:          24px;
+}
+
+mainbox {
+    spacing:  16px;
+    children: [ inputbar, listview ];
+}
+
+inputbar {
+    children:     [ prompt, entry ];
+    border:       1px;
+    border-color: @kd-primary;
+    padding:      10px 14px;
+    spacing:      12px;
+}
+
+prompt { text-color: @kd-primary; }
+
+entry {
+    placeholder:       "Search";
+    placeholder-color: @kd-dim;
+    cursor:            text;
+    text-color:        #c5c9c5;
+    cursor-color:      #c4746e;
+}
+
+listview {
+    lines:        8;
+    columns:      1;
+    spacing:      10px;
+    scrollbar:    false;
+    fixed-height: true;
+}
+
+element {
+    border:       1px;
+    border-color: @kd-primary;
+    padding:      10px 14px;
+    cursor:       pointer;
+}
+
+element normal.normal,
+element alternate.normal {
+    background-color: transparent;
+    text-color:       @kd-primary;
+}
+
+element selected.normal {
+    background-color: @kd-primary;
+    text-color:       @kd-bg;
+}
+
+element-text {
+    background-color: transparent;
+    text-color:       inherit;
+}
